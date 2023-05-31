@@ -1,7 +1,7 @@
 {
-  "name": "ts-node-express-postgres",
+  "name": "ts-node-express",
   "version": "1.0.0",
-  "description": "personal project building a postgress express app",
+  "description": "personal project building a basic ts express app to be used as a template",
   "main": "index.js",
   "scripts": {
     "test": "run test",
