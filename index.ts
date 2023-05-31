@@ -1,12 +1,7 @@
-import express, { Express, Request, Response } from 'express'
+import server from './server'
 
-const app: Express = express()
 const port = 3000
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!!!!!!!!!!!!!!!!!')
-})
-
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`server listening on port http://localhost:${port}`)
 })
