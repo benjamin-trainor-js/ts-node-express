@@ -4,7 +4,12 @@
   "description": "personal project building a postgress express app",
   "main": "index.js",
   "scripts": {
-    "test": "run test"
+    "test": "run test",
+    "build": "rimraf dist && npx tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "predev": "npm run build",
+    "dev": "concurrently 'npx tsc -w' 'nodemon dist/index.js'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,11 @@
   },
   "homepage": "https://github.com/benjamin-trainor-js/ts-node-express-postgres#readme",
   "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.5",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
