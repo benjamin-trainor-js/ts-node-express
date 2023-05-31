@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-express-postgres",
+  "version": "1.0.0",
+  "description": "personal project building a postgress express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjamin-trainor-js/ts-node-express-postgres.git"
+  },
+  "author": "Benjamin M. Trainor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjamin-trainor-js/ts-node-express-postgres/issues"
+  },
+  "homepage": "https://github.com/benjamin-trainor-js/ts-node-express-postgres#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
